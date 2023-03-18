@@ -15,7 +15,7 @@
     <div class="container">
         <nav class="main-nav">
             <ul>
-                <img src="./Assets/Images/FELA.png" class="logo">
+                <img src="./Assets/Images/FELA (1).png" class="logo">
             </ul>   
             <ul class="main-menu">
                 <li>Biography</li>
@@ -29,8 +29,27 @@
             </ul>
         </nav>
     </div>
-    <section class="hero">
-        <p>Afro-beat Legend</p>
+    <section class="hero"> 
+        <h1>Legendary Afro-beat King</h1>
     </section>
+    <section id="biography">
+        <!-- <hr> -->
+        <h2>Biography</h2>
+        <div class="bio-content">
+            <div>
+                <p>Fela Kuti (born October 15, 1938 – August 2, 1997) as a Nigerian multi-instrumentalist musician and composer, pioneer of Afrobeat music,
+                    human rights activist, and political maverick. Kuti was born Olufela Olusegun Oludotun Ransome-Kuti in 
+                    Abeokuta, Ogun State, Nigeria into a middle-class family. His mother, Funmilayo Ransome-Kuti was a feminist 
+                    activist in the anti-colonial movement and his father, Reverend Israel Oludotun Ransome-Kuti, a Protestant minister 
+                    and school principal, was the first president of the Nigerian Union of Teachers.</p>
+                <button>Read more</button>   
+            </div>
+            <img src="./assets/images/Fela-Squatting-1024x1007.jpg"> 
+        </div>
+    </section>
+    
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
 </body>
 </html>
