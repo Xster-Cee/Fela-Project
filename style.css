@@ -1,14 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* font-family: 'Anton', sans-serif; */
     font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -91,55 +94,119 @@ body {
     margin: 0 24vw;
     text-align: center;
 }
-
-hr {
-    background-color: bisque;
-    width: 1rem;
-    height: 1rem;
+.hero p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-.bio-content {
-    margin: 2rem;
+/* biography section */
+#biography {
+    margin: 5rem 3rem;
+}
+
+.section-title {
     display: grid;
-    grid-template-columns: 2fr 1fr;    
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+#biography hr {
+    background-color: #0C1024;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0C1024;
+    margin-top: 2.8rem;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 3%;   
   
 }
 
-#biography h2{
-    text-align: center;
+#biography h1{
+    text-align: left;
     text-transform: uppercase;
     margin-top: 2rem;
     color:#0C1024;
+    font-weight: 900;
+    margin-bottom: 1rem;
 }
 
 
-.bio-content img {
-    width: 60vw;
-    height: 60vh;
-    padding-left: 2rem;
+.bio-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 1rem;
 }
 
-.bio-content p {
+.bio-container p {
     text-align: justify;
 }
 
-.bio-content button:hover {
+.bio-container button:hover {
     cursor: pointer;
-    background-color: #E1D8EB;
-    color: #0C1024;
+    background-color: #0C1024;
+    color: #E1D8EB;
     border: 1px solid #E1D8EB;
 }
 
-.bio-content button {
+.bio-container button {
     margin-top: 2rem;
-    background-color: #0C1024;
-    color: #E1D8EB;
-    width: 7rem;
-    height: 3rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 1rem 2rem;
     border: 1px solid #0C1024;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
+#songs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Assets/Images/fela\ on\ stage.webp);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-position: center; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#songs h1 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+#songs p {
+    color: #ffffff;
+    text-align: center; 
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+#songs button:hover {
+    cursor: pointer;
+    background-color: #750D0A;
+    color: #E1D8EB;
+    border: 1px solid #750D0A;
+}
+
+#songs button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+}
 /* media query */
 @media only screen and (max-width: 960px) {
     .menu-btn {
@@ -200,21 +267,56 @@ hr {
     }
 }
 
+@media only screen and (max-width: 768px){
+    /* biography section */
+#biography {
+    margin: 10% 4%;
+}
+
+.section-title {
+    grid-template-columns: 1fr 7fr;
+}
+
+.bio-container {
+    grid-template-columns: 1fr;    
+}
+
+.bio-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.hero h1 {
+    font-size: 4rem;
+}
+.hero p {
+    font-size: 0.8rem;
+}
+}
+
 @media only screen and (max-width: 425px) {
     .hero h1 {
         /* margin: 0 1vw; */
         font-size: 3rem;
     }
-    .bio-content {
-        margin: 2rem;
+    
+    .bio-container {
+        /* margin: 2rem; */
         display: block;    
     }
-    .bio-content button {
-        margin-bottom: 2rem;  
+    .bio-container button {
+        margin-bottom: 2rem;
+        padding: 0.7rem 1rem;        
     }
     
-    .bio-content img {
-        width: 40vw;
-        height: 40vh;
+    .bio-container img {
+        width: 60vw;
+        height: 30vh;
+    }
+    .hero p {
+        font-size: 0.5rem;
+    }
+    .section-title {
+        grid-template-columns: 1fr 2fr;
     }
 }
