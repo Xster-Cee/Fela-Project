@@ -91,13 +91,14 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 4rem;
-    margin: 0 24vw;
+    /* padding: 0 24vw; */
     text-align: center;
 }
 .hero p {
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
+    /* padding: 0 24vw; */
 }
 
 /* biography section */
@@ -148,20 +149,29 @@ a {
     font-size: 1.5rem;
 }
 
+.bio-container button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .bio-container button:hover {
     cursor: pointer;
     background-color: #0C1024;
     color: #E1D8EB;
     border: 1px solid #E1D8EB;
-}
-
-.bio-container button {
-    margin-top: 2rem;
-    background-color: transparent;
-    color: #0C1024;
-    padding: 1rem 2rem;
-    border: 1px solid #0C1024;
-    border-radius: 0.5rem;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
 }
 
 /* songs section */
@@ -193,13 +203,6 @@ a {
     font-size: 1.5rem;
 }
 
-#songs button:hover {
-    cursor: pointer;
-    background-color: #750D0A;
-    color: #E1D8EB;
-    border: 1px solid #ffffff;
-}
-
 #songs button {
     margin-left: auto;
     margin-right: auto;
@@ -207,9 +210,22 @@ a {
     margin-top: 2rem;
     background-color: transparent;
     color: #ffffff;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2.5rem;
     border: 1px solid #ffffff;
     border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#songs button:hover {
+    cursor: pointer;
+    background-color: #750D0A;
+    color: #E1D8EB;
+    border: 1px solid #ffffff;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
 }
 
 /* performance section */
@@ -270,20 +286,188 @@ a {
     font-weight: 900;
 }
 
+.performance-container button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .performance-container button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+}
+
+/* kalakuta section */
+.republic-outter {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#republic {
+    margin: 5rem 3rem;
+}
+
+.republic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 3%;
+}
+
+.republic-content hr {
+    background-color: #0C1024;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0C1024;
+    margin-top: 2.8rem;
+}
+
+.republic-content p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.republic-content h1{
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color:#0C1024;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.republic-content button:hover {
     cursor: pointer;
     background-color: #0C1024;
     color: #E1D8EB;
     border: 1px solid #E1D8EB;
 }
 
-.performance-container button {
+.republic-content button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     margin-top: 2rem;
     background-color: transparent;
     color: #0C1024;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2.5rem;
     border: 1px solid #0C1024;
     border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.republic-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.republic-container img.image-1 {
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #0C1024;
+}
+
+.republic-container img.image-2 {
+    position: absolute;
+    z-index: 2;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #0C1024;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+/* gallery */
+#gallery {
+    padding: 5rem 1rem;
+    margin: 5rem 0;
+    background: linear-gradient(#0C1024, #ffffff);
+    overflow: hidden;
+}
+
+@keyframes slides {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(0);}
+    30% {transform: translateX(-100%);}
+    50% {transform: translateX(-100%);}
+    55% {transform: translateX(-200%);}
+    75% {transform: translateX(-200%);}
+    80% {transform: translateX(-300%);}
+    100% {transform: translateX(-300%);}
+}
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    transform: translateX(-800px);
+    animation-name: slides;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.section-title2 h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: wheat;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#gallery img {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#gallery button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gallery button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: wheat;
+    border: 1px solid #E1D8EB;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
 }
 
 /* media query */
@@ -341,9 +525,9 @@ a {
         right: 30px;
     }
 
-    .hero h1 {
-        margin: 0 20vw;
-    }
+    /* .hero h1 {
+        padding: 0 20vw;
+    } */
 
     .bio-container p {
         font-size: 13px;
@@ -372,6 +556,22 @@ a {
     }
     
     .performance-container button {
+        padding: 0.5rem 1rem;
+    }
+
+    .republic-content p {
+        font-size: 13px;
+    }
+    
+    .republic-content button {
+        padding: 0.5rem 1rem;
+    }
+
+    .republic-container img {
+        max-width: 250px;
+    }
+
+    #gallery button {
         padding: 0.5rem 1rem;
     }
 }
@@ -417,6 +617,34 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#republic {
+    margin: 10% 4%;
+}
+
+.republic-container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr; 
+    grid-gap: 2%;
+}
+
+.republic-content hr {
+    width: 3rem;
+}
+
+.republic-content p {
+    font-size: 13px;
+}
+
+.republic-content button {
+    padding: 0.5rem 1rem;
+}
+
+.republic-container img {
+    width: 100%;
+    max-width: 210px;
+    height: auto;
 }
 }
 
@@ -466,6 +694,41 @@ a {
     .performance-content .section-title {
         grid-template-columns: 1fr 2fr;
     }
+    
+    .republic-container {
+        display: block;
+    }
+    
+    .republic-content p {
+        font-size: 13px;
+    }
+    
+    .republic-content hr {
+        margin-top: 19rem;
+    }
+
+    .republic-content h1{
+        margin-top: 18rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    
+    .republic-content button {
+        padding: 0.5rem 1rem;
+    }
+    
+    .republic-container img {
+        width: auto;
+        max-width: 60vw;
+        height: auto;
+        display: block;
+    }
+    
+    .republic-container img.image-2 {
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+    
 }
 
 @media only screen and (max-width: 320px) {
@@ -476,5 +739,12 @@ a {
     #songs p {
         margin-left: 3rem;
         margin-right: 3rem;
+    }
+
+    .republic-content hr {
+        margin-top: 16rem;
+    }
+    .republic-content h1{
+        margin-top: 15rem;
     }
 }
