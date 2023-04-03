@@ -76,7 +76,7 @@ a {
 
 /* hero section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/fela-kuti.webp) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Assets/Images/fela-kuti.webp) ;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
