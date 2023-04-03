@@ -15,7 +15,7 @@
     <div class="container">
         <nav class="main-nav">
             <ul>
-                <img src="./Assets/Images/FELA (1).png" class="logo">
+                <img src="./Assets/Images/F-Logo-remove.png" class="logo">
             </ul>   
             <ul class="main-menu">
                 <a href="#biography"><li>Biography</li></a>
@@ -25,7 +25,7 @@
                 <li>Kalakuta Republic</li>
             </ul>
             <ul class="right-menu">
-            <img src="./Assets/Images/icons8-photo-gallery.gif">
+                <img src="./Assets/Images/icons8-photo-gallery.gif">
             </ul>
         </nav>
     </div>
@@ -50,7 +50,7 @@
                 <a href="./biograpy_page/biography.html"><button>Read more</button></a>  
             </div>
             <div>
-                <img src="./assets//Images/kutiK.jpg">
+                <img src="./Assets//Images/kutiK.jpg">
             </div> 
         </div>
     </section>
@@ -115,14 +115,73 @@
     <div class="section-title2">
         <h1>Photo Speaks</h1>
     </div>
-    <div class="slider-container">
-        <img src="./Assets/Images/anikulapo.jpg">
-        <img src="./Assets/Images/anikulapo2.jpg">
-        <img src="./Assets/Images/anikulapo3.jpg">
-        <img src="./Assets/Images/anikulapo4.jpg">
-    </div>
+    <ul class="slides">
+        <input type="radio" name="radio-button" id="img-1" checked>
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./Assets/Images/kalakuta 4.jpg">
+            </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+        </li>
+
+        <input type="radio" name="radio-button" id="img-2" checked>
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./Assets/Images/anikulapo2.jpg">
+            </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+
+        <input type="radio" name="radio-button" id="img-3" checked>
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./Assets/Images/anikulapo3.jpg">
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+
+        <input type="radio" name="radio-button" id="img-4" checked>
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./Assets/Images/anikulapo4.jpg">
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    </ul>
     <a href="#"><button>View gallery</button></a>
 </section>
+<footer>
+    <nav class="foot-nav">
+        <ul>
+            <img src="./Assets/Images/F-Logo-remove.png" alt="logo" class="logo">
+        </ul>
+        <ul class="foot-menu">
+            <li>Blog</li>
+            <li>|</li>
+            <li>Support</li>
+            <li>|</li>
+            <li>About</li>
+        </ul>
+        <ul class="contact">
+            <li>FCT - Abuja, Nigeria</li>
+            <li>|</li>
+            <li>Xster-Cee:(+234)8143718171</li>
+        </ul>
+    </nav>
+    <p>&copy;2023</p>
+</footer>
     <script>
         document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
     </script>
