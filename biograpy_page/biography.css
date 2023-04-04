@@ -1,0 +1,6 @@
+#biography img {
+    height: auto;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 15px 15px #E06363;
+}
