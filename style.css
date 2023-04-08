@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 13px;
 }
 
 a {
@@ -202,6 +201,7 @@ a {
     margin-left: 20rem;
     margin-right: 20rem;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 #songs button {
@@ -533,14 +533,21 @@ input:checked + .slide-container .nav label {
 
 /* footer section */
 footer {
-    background-color: #524c48;
+    background-color: #1E0606;
     padding: 1rem 3rem;
     color: #ffffff;
-    text-transform: uppercase;
+}
+
+.logo-2 {
+    height: 3rem;
+    width: 3rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
 }
 
 footer nav ul li {
     list-style: none;
+    color: #AAC2BD;
 }
 
 .foot-nav {
@@ -553,7 +560,6 @@ footer nav ul li {
 
 .foot-nav ul li:hover {
     cursor: pointer;
-    color: #1E0606;
 }
 
 
@@ -568,11 +574,12 @@ footer nav ul li {
 footer p {
     margin-top: 2rem;
     text-align: center;
+    font-size: 10px;
+    font-weight: 0.8rem;
 }
 
 footer p:hover {
     cursor: pointer;
-    color: #1E0606;
 }
 
 /* media query */
@@ -635,7 +642,7 @@ footer p:hover {
     } */
 
     .bio-container p {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .bio-container button {
@@ -678,6 +685,11 @@ footer p:hover {
 
     #gallery button {
         padding: 0.5rem 1rem;
+    }
+
+    .logo-2 {
+        height: 2rem;
+        width: 2rem;
     }
 }
 
@@ -763,7 +775,7 @@ footer p:hover {
 @media only screen and (max-width: 425px) {
     .hero h1 {
         /* margin: 0 1vw; */
-        font-size: 3rem;
+        font-size: 4rem;
     }
     
     .bio-container {
@@ -779,8 +791,7 @@ footer p:hover {
     }
     
     .bio-container img {
-        width: 60vw;
-        height: 30vh;
+        max-width: 600px;
     }
     .hero p {
         font-size: 0.5rem;
@@ -794,8 +805,8 @@ footer p:hover {
     }
     
     #songs p {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         font-size: 13px;
     }
     
@@ -852,8 +863,7 @@ footer p:hover {
 
     #gallery img {
         max-width: 350px;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1.5rem;
     }
 
     .nav label {
@@ -864,8 +874,13 @@ footer p:hover {
         padding-right: 12rem ;
     }
 
+    .slides{
+        height: 300px;
+    }
+
     #gallery button {
-        margin-top: 0.2rem;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     footer {
@@ -903,8 +918,7 @@ footer p:hover {
 
     #gallery img {
         max-width: 300px;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1.5rem;
     }
 
     .nav label {
@@ -913,6 +927,10 @@ footer p:hover {
         font-size: 50px;
         line-height: 200px;
         padding-right: 16rem ;
+    }
+
+    .slides{
+        height: 280px;
     }
 
     .foot-nav ul li {
@@ -926,8 +944,8 @@ footer p:hover {
     }
     
     #songs p {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
     }
 
     .republic-content hr {
@@ -954,8 +972,7 @@ footer p:hover {
 
     #gallery img {
         max-width: 250px;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1.2rem;
     }
 
     .nav label {
@@ -964,6 +981,10 @@ footer p:hover {
         font-size: 50px;
         line-height: 200px;
         padding-right: 19rem ;
+    }
+
+    .slides{
+        height: 220px;
     }
 
     .foot-nav .contact {
