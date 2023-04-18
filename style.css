@@ -198,10 +198,9 @@ a {
 #songs p {
     color: #ffffff;
     text-align: center; 
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1.5rem;
-    text-align: justify;
 }
 
 #songs button {

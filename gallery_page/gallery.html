@@ -10,16 +10,19 @@
     <title>Fela | Biography, Life and Shows</title>
 </head>
 <body>
+    <div class="menu-btn">
+        <img src="../Assets/Images/icons8-bars-24.png">
+    </div>
     <div class="container">
         <nav class="main-nav">
             <ul>
                 <a href="../index.html"><img src="../Assets/Images/F-Logo-remove.png" class="logo"></a>
             </ul>   
             <ul class="main-menu">
-                <li>Biography</li>
-                <li>Songs</li>
-                <li>Performances</li>
-                <li>Kalakuta Republic</li>
+                <a href="../biograpy_page/biography.html"><li>Biography</li></a>
+                <a href="../song_page/songs.html"><li>Songs</li></a>
+                <a href="../performance_page/performance.html"><li>Performances</li></a>
+                <a href="../kalakuta_page/kalakuta.html"><li>Kalakuta Republic</li></a>
             </ul>
             <ul class="right-menu">
                 <img src="../Assets/Images/icons8-photo-gallery.gif">
@@ -30,7 +33,7 @@
     <footer>
         <nav class="foot-nav">
             <ul>
-                <img src="../Assets/Images/F-Logo-remove.png" alt="logo" class="logo-2">
+                <a href="../index.html"><img src="../Assets/Images/F-Logo-remove.png" alt="logo" class="logo-2"></a>
             </ul>
             <ul class="foot-menu">
                 <li>Our Portfolio</li>
@@ -47,5 +50,8 @@
         </nav>
         <p>&copy; CodeSpac 2023</p>
     </footer>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
 </body>
 </html>

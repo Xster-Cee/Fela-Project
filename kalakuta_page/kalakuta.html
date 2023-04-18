@@ -10,27 +10,83 @@
     <title>Fela | Biography, Life and Shows</title>
 </head>
 <body>
+    <div class="menu-btn">
+        <img src="../Assets/Images/icons8-bars-24.png">
+    </div>
     <div class="container">
         <nav class="main-nav">
             <ul>
                 <a href="../index.html"><img src="../Assets/Images/F-Logo-remove.png" class="logo"></a>
             </ul>   
             <ul class="main-menu">
-                <li>Biography</li>
-                <li>Songs</li>
-                <li>Performances</li>
-                <li>Kalakuta Republic</li>
+                <a href="../biograpy_page/biography.html"><li>Biography</li></a>
+                <a href="../song_page/songs.html"><li>Songs</li></a>
+                <a href="../performance_page/performance.html"><li>Performances</li></a>
+                <a href="../kalakuta_page/kalakuta.html"><li>Kalakuta Republic</li></a>
             </ul>
             <ul class="right-menu">
                 <img src="../Assets/Images/icons8-photo-gallery.gif">
             </ul>
         </nav>
     </div> 
-
+<section id="republic-hero"></section>
+<section id="kalaKuta">
+    <div class="kalakuta-title">
+        <h1>the
+            <br>
+            republic</h1>
+    </div>
+    <div class="kalakuta-content">
+        <p>
+            Afro beats legend, Fela Anikulapo Kuti got married to 27 women in one day back in 1978 in what was seen as a very daring move. 
+            According to reports, Fela decided to make the bold move after rumours began to 
+            filter the air that he was holding the women in his band as captives.  
+        </p>
+    </div>
+</section>
+<section id="photos">
+    <div class="gallery">
+            <img src="../Assets/Images/Fela-and-his-Queens.jpg" alt="" class="img-1 img">
+            <img src="../Assets/Images/kalakuta3.jpg" alt="" class="img-2 img">
+    </div>
+    <div>
+        <img src="../Assets/Images/kuti-wives-grid4.jpg" alt="" class="img-3 img">
+    </div>
+</section>
+<section id="Museum">
+    <h1>kalakuta museum</h1>
+    <div class="museum-content">
+        <p>
+            Kalakuta Republic is derived from a spell Fela spent in prison in 1974 on suspicion of possessing weed. 
+            He was held in a communal cell which his fellow prisoners jokingly called Kalakuta Republic - in Swahili, kalakuta means “rascal.” 
+            The tag had a ring to it which appealed to Fela. <br> <br>
+            Kalakuta Republic was first situated in the Lagos suburb of Surulere, where Fela, his family and Afrika 70 lived until 1977, 
+            when the army burnt it to the ground. On February 18, some 1,000 soldiers sealed off the neighbourhood and broke down Kalakuta’s 
+            defensive perimeter fence. Residents were beaten with rifle butts and iron bars. Women were raped. 
+            Fela was beaten with particular viciousness and his 77 year old mother, a hero of Nigeria’s independence struggle, 
+            was thrown from an upstairs window, fracturing a leg (she died the following year from the trauma she had suffered).
+        </p>
+        <div>
+            <img src="../Assets/Images/museum.jpg" alt="museum" class="image">
+        </div>
+    </div>
+</section>
+<div class="description">
+    <p>
+        The Kalakuta Museum is managed by Fela’s son Kunle. Fela’s tomb is next to the house. 
+        Inside, the Museum hums with people and positivity. The walls are covered in historic photographs, posters, paintings, 
+        murals, album covers and newspaper cuttings. Some of Fela’s musical instruments are on show, including his brightly painted, 
+        signature tenor saxophone. <br> <br>
+        It is possible to look into Fela’s bedroom, which is preserved as he left it – and still contains the refrigerator for his ice-cream, 
+        his snack of choice during an attack of the munchies. Rows of Fela’s shoes and shirts are on display along with stage suits, 
+        the fur coat he took on tours of Europe and the US, and even a few pairs of Speedo underpants, his preferred leisurewear. 
+        There is a rooftop café and visitors can stay the night in one of several air-conditioned, en-suite rooms.
+    </p>
+    </div>
     <footer>
         <nav class="foot-nav">
             <ul>
-                <img src="../Assets/Images/F-Logo-remove.png" alt="logo" class="logo-2">
+                <a href="../index.html"><img src="../Assets/Images/F-Logo-remove.png" alt="logo" class="logo-2"></a>
             </ul>
             <ul class="foot-menu">
                 <li>Our Portfolio</li>
@@ -47,5 +103,8 @@
         </nav>
         <p>&copy; CodeSpac 2023</p>
     </footer>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
 </body>
 </html>

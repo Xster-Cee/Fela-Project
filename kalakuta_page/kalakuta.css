@@ -1,0 +1,220 @@
+#republic-hero {
+    background-image: url(../Assets/Images/kalakuta.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+#kalaKuta {
+    margin: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+}
+
+.kalakuta-title h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #1E0606;
+    line-height: 3.5rem;
+    margin-left: 10rem;
+}
+
+.kalakuta-content p {
+    line-height: 1.5rem;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+}
+
+/* @keyframes  {
+      
+} */
+
+.img {
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.img-1 {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+.img-3 {
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+#Museum {
+    margin: 7rem 9rem 5rem 3rem;
+}
+
+#Museum h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #1E0606;
+    text-align: center;
+}
+
+.museum-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+}
+
+.image {
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.description {
+    margin: 7rem 2rem 5rem 3rem;
+}
+
+/* media query */
+@media only screen and (max-width: 1024px) {
+    .img-1 {
+        height: auto;
+        width: 100%;
+        max-width: 450px;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-3 {
+        margin-top: 3rem;
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #kalaKuta {
+        margin: 5rem 3rem;
+    }
+
+    .kalakuta-title h1 {
+        margin-left: 3rem;
+    }
+    
+    .kalakuta-content p {
+        font-size: 1.2rem;
+    }
+    
+    #photos {
+        display: block;
+    }
+    
+    .img-1 {
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .img-2 {
+        max-width: 900px;
+    }
+    
+    .img-3 {
+        max-width: 500px;
+        margin-left: 8rem;
+        margin-right: 2rem;
+    }
+    
+    #Museum {
+        margin: 7rem 2rem 3rem 2rem;
+    }
+    
+    .museum-content {
+        display: block;
+    }
+    
+    .museum-content p {
+        font-size: 1.2rem;
+    }
+
+    .image {
+        max-width: 600px;
+        margin-top: 2rem;
+    }
+    
+    .description {
+        margin: 1rem 2rem 5rem 2rem;
+        font-size: 1.2rem;
+    }  
+}
+
+@media only screen and (max-width: 425px) {
+    #republic-hero {
+        height: 45vh;
+    }
+    
+    #kalaKuta {
+        display: block;
+        margin: 5rem 1rem;
+    }
+
+    .kalakuta-title h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-left: 0rem;
+    }
+    
+    #photos {
+        display: block;
+    }
+    
+    .img {
+        cursor: pointer;
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .img-1 {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+    
+    .img-3 {
+        margin-top: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+    #Museum {
+        margin: 7rem 1.5rem 2rem 1.5rem;
+    }
+    
+    #Museum h1 {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+    
+    .museum-content {
+        display: block;
+    }
+    
+    .image {
+        max-width: 500px;
+    }
+    
+    .description {
+        margin: 1rem 1.5rem 3rem 1.5rem;
+    }
+}
