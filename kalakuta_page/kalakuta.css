@@ -31,11 +31,21 @@
     grid-gap: 7%;
 }
 
-/* @keyframes  {
-      
-} */
+@keyframes pictures {
+    from {
+        opacity: 0;
+        transform: translateX(70px) rotate(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}
 
 .img {
+    animation: pictures 2s ease-in-out forwards;
+    animation-iteration-count: 2;
+    animation-delay: 0.8s;
     cursor: pointer;
     height: auto;
     width: 100%;
@@ -56,12 +66,13 @@
 }
 
 #Museum {
-    margin: 7rem 9rem 5rem 3rem;
+    margin: 7rem 7rem 3rem 3rem;
 }
 
 #Museum h1 {
     text-transform: uppercase;
     font-size: 3rem;
+    margin-bottom: 1rem;
     color: #1E0606;
     text-align: center;
 }
@@ -80,7 +91,7 @@
 }
 
 .description {
-    margin: 7rem 2rem 5rem 3rem;
+    margin: 3rem 2rem 2rem 3rem;
 }
 
 /* media query */
